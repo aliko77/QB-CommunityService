@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="CommunityService" style="width: 380px; margin: auto; margin-top: 10%">
+		<div class="container d-flex justify-content-center align-items-center">
+			<div class="card CommunityService-card">
+				<button type="button" class="btn-close" id="closeCommunityService"></button>
+				<div class="card-body CommunityService-card-body p-4">
+					<span class="menutitle">Kamu Cezası Verme</span>
+					<hr>
+					<div id="CommunityService_Users">
+						<div class="dropdown">
+							<div class="select">
+								<div class="title">Ceza verilecek kişi</div>
+								<span id="chevron" class="fa fa-chevron-left"></span>
+							</div>
+							<input id="target" type="hidden" name="target">
+							<ul class="dropdown-menu">
+								<li id="male">Male</li>
+								<li id="female">Female</li>
+							</ul>
+						</div>
+					</div>
+					<div class="input-group">
+						<input type="number" class="form-control" id="CommunityService_amount"
+							placeholder="Ceza miktarı" min="1" maxlength="8"
+							style="border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important;">
+						<span class="input-group-text">#</span>
+					</div>
+					<div class="input-group" id="reasondiv">
+						<input type="text" class="form-control" id="CommunityService_reason"
+							placeholder="Sebep"
+							style="border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important;">
+						<span class="input-group-text">?</span>
+					</div>
+					<br>
+					<div class="d-flex justify-content-center">
+						<button type="button" id="submitCommunityService" class="btn btn-blue flex-grow-1"
+							style="border-radius: 10px; flex-basis: 100%;" data-bs-dismiss="modal"><i
+							class="fas fa-paper-plane"></i> Cezayı Ver
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="information-panel">
+		<p>
+			Kamu Cezası Bilgisi
+		</p>
+		<h2>
+			Kalan Ceza: 10
+		</h2>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src='script.js'></script>
+</body>
+
+</html>
